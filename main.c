@@ -3,17 +3,16 @@
 
 int main()
 {
-    int a,x;
-    printf("set the limit\n");
-    scanf("%d",&x);
-    for(a=1;a<x;a=a+1){
-            for(int b=1;b<a;b=b+1){
-        printf("%d",b);
+    int a;
+    a=1;
+    while(a<8){
+        int b=1;
+        while(b<a){
+            printf("%d",b);
+            b=b+1;
+        }
+        printf("%d\n",a);
+        a=a+1;
     }
-    printf("%d\n",a);
-
-}
-
-
     return 0;
 }
